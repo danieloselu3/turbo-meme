@@ -4,7 +4,7 @@ A Data Engineering Project leveraging DBT, Metabase and Postgres for Analytics E
 ## Overview
 
 Turbo-Meme is a Data Engineering project that leverages DBT (Data Build Tool) and PostgreSQL for Analytics Engineering. The project aims to process and analyze taxi ride data from New York City, providing insights and analytics through a robust data pipeline.
- 
+
 **This project was inspired by examples from Data Engineering zoomcamp 2025 Analytics Module**
 
 ## Table of Contents
@@ -16,8 +16,6 @@ Turbo-Meme is a Data Engineering project that leverages DBT (Data Build Tool) an
 - [Data Sources](#data-sources)
 - [DBT Models](#dbt-models)
 - [Docker Setup](#docker-setup)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Structure
 ```
