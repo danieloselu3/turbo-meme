@@ -18,6 +18,7 @@ Turbo-Meme is a Data Engineering project that leverages DBT (Data Build Tool) an
 - [License](#license)
 
 ## Project Structure
+```
 turbo-meme/
 ├── .gitignore
 ├── README.md
@@ -38,6 +39,7 @@ turbo-meme/
     ├── target/
     ├── tests/
     └── tm_venv/
+```
 
 
 ## Setup and Installation
