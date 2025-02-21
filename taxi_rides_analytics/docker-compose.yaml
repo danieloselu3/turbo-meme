@@ -31,7 +31,7 @@ services:
 
   dbt:
     container_name: tr_analytics_dbt
-    image: ghcr.io/dbt-labs/dbt-postgres:1.7.2 #dbtlabs/dbt:latest  #dbt-dummy
+    image: ghcr.io/dbt-labs/dbt-postgres:1.7.2
     build: .
     volumes:
       - .:/usr/app/dbt
@@ -44,5 +44,25 @@ services:
       - postgres
     command: ["run"]
 
+  metabase:
+    container_name: tr_analytics_metabase
+    image: metabase/metabase:latest
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: production
+      MB_DB_PORT: 5432
+      MB_DB_USER: postgres
+      MB_DB_PASS: postgres
+      MB_DB_HOST: postgres
+      JAVA_TIMEZONE: UTC
+    volumes:
+      - ./metabase-data:/metabase-data
+    depends_on:
+      - postgres
+
 volumes:
   data:
+  metabase-data:
