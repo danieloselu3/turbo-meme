@@ -18,7 +18,26 @@ Turbo-Meme is a Data Engineering project that leverages DBT (Data Build Tool) an
 - [License](#license)
 
 ## Project Structure
-turbo-meme/ ├── .gitignore ├── README.md ├── requirements.txt ├── taxi_rides_analytics/ │ ├── analyses/ │ ├── data/ │ ├── dbt_packages/ │ ├── dbt_project.yml │ ├── docker-compose.yaml │ ├── load_taxi_data.py │ ├── logs/ │ ├── macros/ │ ├── metabase-data/ │ ├── models/ │ ├── seeds/ │ ├── snapshots/ │ ├── target/ │ ├── tests/ │ └── tm_venv/
+turbo-meme/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── taxi_rides_analytics/
+    ├── analyses/
+    ├── data/
+    ├── dbt_packages/
+    ├── dbt_project.yml
+    ├── docker-compose.yaml
+    ├── load_taxi_data.py
+    ├── logs/
+    ├── macros/
+    ├── metabase-data/
+    ├── models/
+    ├── seeds/
+    ├── snapshots/
+    ├── target/
+    ├── tests/
+    └── tm_venv/
 
 
 ## Setup and Installation
